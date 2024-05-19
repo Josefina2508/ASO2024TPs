@@ -1,0 +1,33 @@
+Tarea_SIN_hilos
+
+-El tiempo de ejecucion no es predecible porque la primera tarea depende de la velociad de la maquina y siempre va a variar los segundos en los que se termine de ejecutar la tarea, en cambio las otras dos no cambian porque no dependen de eso
+
+-Un proceso o función de la vida real que pueden ser considerados procesos de “máxima
+velocidad posible” que depende casi exclusivamente de la velocidad de la máquina que los ejecuta podria ser cambiar de canal con un control remoto
+
+-Un proceso o función de la vida real que pueden ser considerados procesos de “velocidad de
+respuesta no dependiente de la velocidad de procesamiento” o que sea de naturaleza impredecible o
+externa, podria ser descargar agun archivo de internet
+
+Tarea_CON_hilos
+
+-Se mejoro un monton el tiempo de respuesta con respecto al mismo programa sin hilos, en el programa sin hilos tardaba 8 segundos y con hilos tarda 1 segundo
+
+-Los tres hilos no terminan las funciones en el orden establecido
+
+-Un escenario real donde el multi-hilado puede mejorar considerablemente el tiempo de
+respuesta de un sistema podria ser cuando se ejecuta una aplicacion que necesita realizar diferentes tareas para que funcione, al mismo tiempo
+
+Sumador-restador_CON_race
+
+-Yo noto que el tiempo de ejecucion no cambia, sigue siendo el mismo
+
+-El valor final del acumulador cambia y sucede esto porque dos partes del programa intentan cambiar el valor del acumulador al mismo tiempo y a veces una parte puede modificarlo antes que otra, por eso el resultado final varia
+
+-Se puede corregir cambiando la funcion de la otra parte que quiere poner distinto valor al acumulador
+
+Sumador-restador_SIN_race
+
+-El valor final del acumulador va cambiando
+
+-Yo noto que tarda un poco mas
